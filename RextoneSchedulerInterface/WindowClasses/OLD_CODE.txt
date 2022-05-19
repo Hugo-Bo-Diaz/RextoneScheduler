@@ -1,0 +1,84 @@
+	//CreateWindowW(L"static", L"Name: ", WS_VISIBLE | WS_CHILD | SS_RIGHT | SS_CENTERIMAGE, 20, 50, 100, 20, Whandler, NULL, NULL, NULL);
+	//name_edit = CreateWindowW(mode.c_str(), L"", WS_VISIBLE | WS_CHILD | SS_LEFT | SS_CENTERIMAGE, 120, 50, 200, 20, Whandler, NULL, NULL, NULL);
+
+	name_field.Initialize(Whandler,L"Name:",20,50,100,200,20);
+
+	//description
+	CreateWindowW(L"static", L"Description: ", WS_VISIBLE | WS_CHILD | SS_RIGHT | SS_CENTERIMAGE, 20, 80, 100, 20, Whandler, NULL, NULL, NULL);
+	DWORD style = WS_VISIBLE | WS_CHILD | SS_LEFT;
+	if (edit_mode)
+		style += ES_MULTILINE;
+	else
+		style += BS_MULTILINE;
+	desc_edit = CreateWindowW(mode.c_str(), L"", style , 120, 80, 200, 65, Whandler, NULL, NULL, NULL);
+
+	//set up style for the timing, to only allow numbers
+	style = WS_VISIBLE | WS_CHILD | SS_LEFT;
+	if (edit_mode)
+		style += ES_NUMBER;
+
+	//hour
+	CreateWindowW(L"static", L"Hour start: ", WS_VISIBLE | WS_CHILD | SS_RIGHT | SS_CENTERIMAGE, 20, 155, 100, 20, Whandler, NULL, NULL, NULL);
+	s_hour_edit = CreateWindowW(mode.c_str(), L"", style, 120, 155, 200, 20, Whandler, NULL, NULL, NULL);
+
+	CreateWindowW(L"static", L"Hour end: ", WS_VISIBLE | WS_CHILD | SS_RIGHT | SS_CENTERIMAGE, 20, 185, 100, 20, Whandler, NULL, NULL, NULL);
+	e_hour_edit = CreateWindowW(mode.c_str(), L"", style, 120, 185, 200, 20, Whandler, NULL, NULL, NULL);
+
+	//day of the month start
+	CreateWindowW(L"static", L"Day start: ", WS_VISIBLE | WS_CHILD | SS_RIGHT | SS_CENTERIMAGE, 20, 215, 100, 20, Whandler, NULL, NULL, NULL);
+	s_day_edit = CreateWindowW(mode.c_str(), L"", style, 120, 215, 200, 20, Whandler, NULL, NULL, NULL);
+
+	CreateWindowW(L"static", L"Day end: ", WS_VISIBLE | WS_CHILD | SS_RIGHT | SS_CENTERIMAGE, 20, 245, 100, 20, Whandler, NULL, NULL, NULL);
+	e_day_edit = CreateWindowW(mode.c_str(), L"", style, 120, 245, 200, 20, Whandler, NULL, NULL, NULL);
+
+	//month of the year
+	CreateWindowW(L"static", L"Month: ", WS_VISIBLE | WS_CHILD | SS_RIGHT | SS_CENTERIMAGE, 20, 275, 100, 20, Whandler, NULL, NULL, NULL);
+	month_edit = CreateWindowW(mode.c_str(), L"", style, 120, 275, 200, 20, Whandler, NULL, NULL, NULL);
+
+	//year
+	CreateWindowW(L"static", L"Year: ", WS_VISIBLE | WS_CHILD | SS_RIGHT | SS_CENTERIMAGE, 20, 305, 100, 20, Whandler, NULL, NULL, NULL);
+	year_edit = CreateWindowW(mode.c_str(), L"", style, 120, 305, 200, 20, Whandler, NULL, NULL, NULL);
+
+	//link
+	CreateWindowW(L"static", L"Link: ", WS_VISIBLE | WS_CHILD | SS_RIGHT | SS_CENTERIMAGE, 20, 335, 100, 20, Whandler, NULL, NULL, NULL);
+	style = WS_VISIBLE | WS_CHILD | SS_LEFT;
+	if (edit_mode)
+		style += ES_MULTILINE;
+	else
+		style += BS_MULTILINE;
+	link_edit = CreateWindowW(mode.c_str(), L"", style, 120, 335, 200, 65, Whandler, NULL, NULL, NULL);
+
+
+
+
+
+
+
+
+
+
+
+
+	wchar_t buffer[200];
+	GetWindowText(name_edit, buffer, 200);
+	std::string name = name_field.GetFieldText();
+	GetWindowText(desc_edit, buffer, 200);
+	std::string desc = desc_field.GetFieldText();
+	GetWindowText(link_edit, buffer, 200);
+	std::string link = ws2s(buffer);
+
+	
+	GetWindowText(s_hour_edit, buffer, 200);
+	int s_hour = std::stoi( ws2s(buffer));
+	GetWindowText(e_hour_edit, buffer, 200);
+	int e_hour = std::stoi(ws2s(buffer));
+
+	GetWindowText(s_day_edit, buffer, 200);
+	int s_day = std::stoi(ws2s(buffer));
+	GetWindowText(e_day_edit, buffer, 200);
+	int e_day = std::stoi(ws2s(buffer));
+
+	GetWindowText(year_edit, buffer, 200);
+	int year = std::stoi(ws2s(buffer));
+	GetWindowText(month_edit, buffer, 200);
+	int month = std::stoi(ws2s(buffer));

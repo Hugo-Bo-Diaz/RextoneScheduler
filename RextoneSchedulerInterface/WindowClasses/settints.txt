@@ -1,0 +1,15 @@
+
+notifications ev (y/n)
+
+time before notif
+(min - h)
+
+notification td (y/n)
+
+time before notif
+(min - h)
+
+clear data
+
+
+APPLY   CANCEL

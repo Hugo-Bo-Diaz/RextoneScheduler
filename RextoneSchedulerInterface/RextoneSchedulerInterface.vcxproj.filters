@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de origen\UIClasses">
+      <UniqueIdentifier>{b4874d86-0805-43f3-8027-1784c5935143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\WindowClasses">
+      <UniqueIdentifier>{90756650-9316-4a05-aafe-9b9b78cfd9c1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="StringToWstring.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowHandler.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\EventWindow.h">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\MainWindow.h">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\Window.h">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\WindowClass.h">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\UIClasses\ListUI.h">
+      <Filter>Archivos de origen\UIClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\UIClasses\TableUI.h">
+      <Filter>Archivos de origen\UIClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\NoteWindow.h">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\UIClasses\FieldUI.h">
+      <Filter>Archivos de origen\UIClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\ToDoWindow.h">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandler.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="SysTrayNotif.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\SettingsWindow.h">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\UIClasses\CheckBoxUI.h">
+      <Filter>Archivos de origen\UIClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectoryPaths.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="ScheduleNotificator.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\HelpWindow.h">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\AboutMeWindow.h">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClasses\UIClasses\CalendarUI.h">
+      <Filter>Archivos de origen\UIClasses</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowHandler.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClasses\MainWindow.cpp">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClasses\WindowClass.cpp">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClasses\UIClasses\ListUI.cpp">
+      <Filter>Archivos de origen\UIClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClasses\UIClasses\TableUI.cpp">
+      <Filter>Archivos de origen\UIClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="StringToWstring.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandler.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClasses\EventWindow.cpp">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClasses\NoteWindow.cpp">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClasses\UIClasses\FieldUI.cpp">
+      <Filter>Archivos de origen\UIClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClasses\ToDoWindow.cpp">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="SysTrayNotif.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ScheduleNotificator.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClasses\SettingsWindow.cpp">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClasses\UIClasses\CheckBoxUI.cpp">
+      <Filter>Archivos de origen\UIClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectoryPaths.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClasses\HelpWindow.cpp">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClasses\AboutMeWindow.cpp">
+      <Filter>Archivos de origen\WindowClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClasses\UIClasses\CalendarUI.cpp">
+      <Filter>Archivos de origen\UIClasses</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>Archivos de origen</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RextoneSchedulerIcon.ico">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
